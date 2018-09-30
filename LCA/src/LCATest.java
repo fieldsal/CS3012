@@ -17,6 +17,15 @@ public class LCATest {
 		 new Node(4);
 		 new Node(8);
 	}
+	//FindLCA test case
+	@Test
+	public void testFindLCA(){
+		Node binNode = new Node(6);
+		BinaryTree binTree = new BinaryTree();
+		binTree.findLCA(3,5);
+		binTree.findLCA(binNode,3,5);
+		
+	}
 	
 	
 }
