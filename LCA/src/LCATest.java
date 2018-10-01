@@ -24,7 +24,8 @@ public class LCATest {
 		BinaryTree binTree = new BinaryTree();
 		binTree.findLCA(3,5);
 		binTree.findLCA(binNode,3,5);
-		
+		assertEquals(binTree.root,binTree.findLCA(binNode,5,5));
+		assertEquals(binTree.root,null);
 	}
 	
 	
