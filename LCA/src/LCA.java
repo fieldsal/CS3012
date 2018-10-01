@@ -1,5 +1,5 @@
 
-public class LCA {
+/*public class LCA {
 	public static void main(String args[]) 
     { 
         BinaryTree tree = new BinaryTree(); 
@@ -20,3 +20,4 @@ public class LCA {
                             tree.findLCA(2, 4).data); 
     } 
 }
+*/
