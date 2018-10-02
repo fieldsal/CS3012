@@ -90,6 +90,29 @@ public class LCATest {
 		assertNotNull(tree.root);
 		assertNull(tempNode);
 	}
-	
+	//Integer.MAX_VALUE
+	@Test 
+	public void test10000000Nodes() {
+		int x=2,y=3;
+		BinaryTree tree = new BinaryTree();
+		tree.root= new Node(1);
+		Node tempNode = tree.root;
+		Node leftChild = new Node(x);
+		Node rightChild = new Node(y);
+		for(int i=1;i<=10000000;i++) {
+			System.out.println(i);
+			tempNode.left=leftChild;
+			tempNode.right=rightChild;
+			if(i==x) {
+				tempNode = leftChild;
+				x+=2;
+				y+=2;
+				leftChild = new Node(x);
+				rightChild= new Node(y);
+			}
+		}
+		System.out.println("LCA(200, 30303) = " + 
+                tree.findLCA(200, 30303).data); 
+	}
 	
 }
