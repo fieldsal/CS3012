@@ -12,7 +12,9 @@ public class BinaryTree
     { 
         
         if (node == null) 
-            return null; 
+        	return null;
+            	
+            
   
          if (node.data == n1 || node.data == n2) 
             return node; 
@@ -24,7 +26,7 @@ public class BinaryTree
             return node; 
   
         return (left_lca != null) ? left_lca : right_lca; 
-    } 
-  
+    
+    }
     
 } 

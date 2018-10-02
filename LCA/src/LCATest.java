@@ -53,7 +53,15 @@ public class LCATest {
 	    assertNotEquals(tree.findLCA(4, 6).data,5200); 
 	    assertNotEquals(tree.findLCA(3,4).data,183); 
 	    assertNotEquals(tree.findLCA(2, 4).data,1);
+	    
 		
+	}
+	@Test
+	public void testNull() {
+		BinaryTree tree = new BinaryTree(); 
+	    tree.root = null; 
+	    assertNull(tree.root);
+	    
 	}
 	
 	
